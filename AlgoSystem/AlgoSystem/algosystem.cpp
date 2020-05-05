@@ -1,14 +1,16 @@
-//
-// Created by Lotus on 03/05/2020.
-//
+#include<iostream>
+using namespace std;
 
-#include <iostream>
-#define EXIT_COMMAND 2
+ int main(){
+    bool Assortment;
+    cout << "Which assortment do you wish to change: |Linked list - 0|| Array - 1|;
+    cin >> Assortment;
+    //LinkedList
+    if(Assortment){
 
-int main() {
-    int command = 0;
-
-    while(command != EXIT_COMMAND) {
-        std::cout << "";
     }
-}
+    //Array
+    else if(!Assortment){
+
+    }
+ }
