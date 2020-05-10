@@ -2,4 +2,4 @@ cmake_minimum_required(VERSION 3.3)
 
 project(AlgoSystem)
 
-add_executable(AlgoSystem algosystem.cpp)
+add_executable(AlgoSystem array_handler.h list_handler.h char_handler.h array_handler.cpp list_handler.cpp char_handler.cpp algosystem.cpp)

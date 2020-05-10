@@ -6,7 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/AlgoSystem/algosystem.cpp
+/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/algosystem.cpp
 iostream
 -
+array_handler.h
+/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/array_handler.h
+list_handler.h
+/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/list_handler.h
+char_handler.h
+/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/char_handler.h
+
+/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/array_handler.h
+
+/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/char_handler.h
+
+/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/list_handler.h
 

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/AlgoSystem/algosystem.cpp" "/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/AlgoSystem/cmake-build-debug/CMakeFiles/AlgoSystem.dir/algosystem.cpp.o"
+  "/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/algosystem.cpp" "/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug/CMakeFiles/AlgoSystem.dir/algosystem.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

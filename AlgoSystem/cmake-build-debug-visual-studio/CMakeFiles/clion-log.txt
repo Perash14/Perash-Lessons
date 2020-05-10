@@ -1,0 +1,4 @@
+C:\Users\Lotus\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\193.6494.38\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" D:\Projects\Perash-Lessons\AlgoSystem
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-visual-studio

@@ -1,39 +1,45 @@
 #include<iostream>
+
+#include "array_handler.h"
+#include "list_handler.h"
+#include "char_handler.h"
+
 using namespace std;
 
+void printHelp() {
+    cout << "Which assortment do you wish to change:" << endl <<
+         "\t" << "|0 - Linked list|" << endl <<
+         "\t" << "|1 - Array|" << endl <<
+         "\t" << "|2 - Character Array|" << endl;
+}
 
+int main() {
+    int assortment = -1;
+    const int END_COMMAND = 3; // On change will give an error!
 
-int main(){
-    int Assortment = -1;
-    while(0 > Assortment || Assortment > 2){
-        cout << "Which assortment do you wish to change: |Linked list - 0||Array - 1||Character Array - 2| :";
-        cin >> Assortment;
-        //LinkedList
-        if(Assortment == 0){
-            int LL_sort_type;
-            cout << "leg";
-        }
-        //Array
-        else if(Assortment == 1){
-            int ArrayCommand = -1;
-            int Arrsize;
-            int Array[Arrsize];
-            while(0 > ArrayCommand || ArrayCommand > 3){
-                cout << "What would you like to do  with your array sir?: |Add Numbers - 0||Remove Numbers - 1||Re-Sort - 2||Find Number index - 3| :";
-                cin >> ArrayCommand;
-                switch(ArrayCommand){
-                case 0: AddNumbers(Array, Arrsize); break;
-                case 1:
-                case 2:
-                case 3:
-                    default: cout << "You shithead put in a valid number:" << endl; break;
-                }
-            }
-        }
-        //Char Array
-        else if(Assortment == 2){
+    while(assortment != END_COMMAND){
+        printHelp();
+        cout << "Your choice: ";
+        cin >> assortment;
 
+        // Validate
+        if(assortment < 0 || assortment > END_COMMAND) {
+            cout << "Wrong number bitch" << endl;
+            continue;
         }
-        else cout << "Wrong number bitch" << endl;
+
+        // Check ending
+        if(assortment == END_COMMAND) {
+            cout << "Goodbye MF!" << endl;
+            break;
+        }
+
+        switch(assortment) {
+            case 0: listCommand(); break;
+            case 1: arrayCommand(); break;
+            case 2: charCommand(); break;
+        }
     }
+
+    // Ending scene!
 }
