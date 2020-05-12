@@ -5,6 +5,25 @@
 1588598575 source:e:\life\gitprojects\perash-lessons\algosystem\algosystem\algosystem.cpp
 	<iostream>
 
-1588675498 source:e:\life\gitprojects\perash-lessons\algosystem\algosystem.cpp
+1589197722 source:e:\life\gitprojects\perash-lessons\algosystem\algosystem.cpp
 	<iostream>
+	"array_handler.h"
+	"list_handler.h"
+	"char_handler.h"
+
+1589197194 e:\life\gitprojects\perash-lessons\algosystem\array_handler.h
+
+1589197194 e:\life\gitprojects\perash-lessons\algosystem\list_handler.h
+
+1589197194 e:\life\gitprojects\perash-lessons\algosystem\char_handler.h
+
+1589197194 source:e:\life\gitprojects\perash-lessons\algosystem\array_handler.cpp
+	<iostream>
+	"array_handler.h"
+
+1589197194 source:e:\life\gitprojects\perash-lessons\algosystem\char_handler.cpp
+	"char_handler.h"
+
+1589197194 source:e:\life\gitprojects\perash-lessons\algosystem\list_handler.cpp
+	"list_handler.h"
 

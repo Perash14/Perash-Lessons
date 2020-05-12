@@ -10,7 +10,8 @@ void printHelp() {
     cout << "Which assortment do you wish to change:" << endl <<
          "\t" << "|0 - Linked list|" << endl <<
          "\t" << "|1 - Array|" << endl <<
-         "\t" << "|2 - Character Array|" << endl;
+         "\t" << "|2 - Character Array|" << endl <<
+         "\t" << "|3 - Exit|" << endl;
 }
 
 int main() {

@@ -8,11 +8,12 @@
 using namespace std;
 
 void printArrayHelp() {
-    cout << "Which assortment do you wish to change:" << endl <<
+    cout << "Which changes do you wish to make:" << endl <<
          "\t" << "|0 - Add|" << endl <<
          "\t" << "|1 - Remove|" << endl <<
          "\t" << "|2 - Sort|" << endl <<
-         "\t" << "|3 - Search|" << endl;
+         "\t" << "|3 - Search|" << endl <<
+         "\t" << "|4 - Back|" << endl;
 }
 
 void arrayCommand() {
@@ -27,6 +28,24 @@ void arrayCommand() {
         cout << "Your choice: ";
         cin >> command;
 
+        // Validate
+        if(command < 0 || command > END_COMMAND) {
+            cout << "Wrong number bitch" << endl;
+            continue;
+        }
 
+        // Check ending
+        if(command == END_COMMAND) {
+            cout << "Back you go." << endl;
+            break;
+        }
+
+        switch(command) {
+            case 0: addElement(); break;
+            case 1: removeElement(); break;
+            case 2: printArray(); break;
+            case 3: sortArray(); break;
+            case 4: searchArray(); break;
+        }
     }
 }

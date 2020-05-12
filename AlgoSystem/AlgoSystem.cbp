@@ -32,6 +32,12 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="algosystem.cpp" />
+		<Unit filename="array_handler.cpp" />
+		<Unit filename="array_handler.h" />
+		<Unit filename="char_handler.cpp" />
+		<Unit filename="char_handler.h" />
+		<Unit filename="list_handler.cpp" />
+		<Unit filename="list_handler.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
