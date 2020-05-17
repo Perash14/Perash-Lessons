@@ -7,6 +7,23 @@
 
 using namespace std;
 
+int addElement(int arr, int ArrSize){
+    int element;
+    cout <<  "Which number would you like to add: ";
+    cin >> element;
+
+    int* newArr = new int[ArrSize + 1];
+    for(int i = 0;i < ArrSize;i++){
+        newArr[i] = arr[i];
+    }
+    newArr[ArrSize] = element;
+    delete arr;
+    arr = newArr;
+    ArrSize++;
+
+    return *arr, ArrSize;
+}
+
 void printArrayHelp() {
     cout << "Which changes do you wish to make:" << endl <<
          "\t" << "|0 - Add|" << endl <<
@@ -17,7 +34,7 @@ void printArrayHelp() {
 }
 
 void arrayCommand() {
-    int arr_size;
+    int* arr_size;
     bool is_sorted = false;
     int command = -1;
     int* arr;
@@ -41,11 +58,11 @@ void arrayCommand() {
         }
 
         switch(command) {
-            case 0: addElement(); break;
-            case 1: removeElement(); break;
-            case 2: printArray(); break;
-            case 3: sortArray(); break;
-            case 4: searchArray(); break;
+            case 0: addElement(arr, arr_size); break;
+            case 1: removeElement(arr, arr_size); break;
+            case 2: printArray(arr, arr_size); break;
+            case 3: sortArray(arr, arr_size); break;
+            case 4: searchArray(arr, arr_size, is_sorted); break;
         }
     }
 }

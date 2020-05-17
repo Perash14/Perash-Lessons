@@ -12,8 +12,8 @@ void printArrayHelp();
  */
 void arrayCommand(); // Declaration
 
-int* addElement(int* current_arr, int size, int new_elem);
-void removeElement(int* current_arr, int size, int index);
+int addElement(int current_arr, int size);
+void removeElement(int* current_arr, int size);
 void printArray(int* current_arr, int size);
 void sortArray(int* current_arr, int size);
 int searchArray(int* current_arr, int size, bool is_sorted);
