@@ -7,21 +7,19 @@
 
 using namespace std;
 
-int addElement(int arr, int ArrSize){
+int* addElement(int* arr, int& size) {
     int element;
     cout <<  "Which number would you like to add: ";
     cin >> element;
 
-    int* newArr = new int[ArrSize + 1];
-    for(int i = 0;i < ArrSize;i++){
+    int* newArr = new int[size + 1];
+    for(int i = 0;i < size;i++){
         newArr[i] = arr[i];
     }
-    newArr[ArrSize] = element;
+    newArr[size] = element;
     delete arr;
-    arr = newArr;
-    ArrSize++;
-
-    return *arr, ArrSize;
+    size++; // Changes the original
+    return newArr; // Returns the new array
 }
 
 void printArrayHelp() {
@@ -34,10 +32,10 @@ void printArrayHelp() {
 }
 
 void arrayCommand() {
-    int* arr_size;
+    int arr_size;
     bool is_sorted = false;
     int command = -1;
-    int* arr;
+    int* arr = new int[0];
     const int END_COMMAND = 5;
 
     while(command != END_COMMAND) {
@@ -58,7 +56,7 @@ void arrayCommand() {
         }
 
         switch(command) {
-            case 0: addElement(arr, arr_size); break;
+            case 0: arr = addElement(arr, arr_size); break;
             case 1: removeElement(arr, arr_size); break;
             case 2: printArray(arr, arr_size); break;
             case 3: sortArray(arr, arr_size); break;

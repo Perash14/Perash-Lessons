@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/algosystem.cpp
+iostream
+-
+array_handler.h
+/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/array_handler.h
+list_handler.h
+/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/list_handler.h
+char_handler.h
+/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/char_handler.h
+
+/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/array_handler.cpp
+iostream
+-
+array_handler.h
+/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/array_handler.h
+
+/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/array_handler.h
+
+/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/char_handler.cpp
+char_handler.h
+/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/char_handler.h
+
+/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/char_handler.h
+
+/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/list_handler.cpp
+list_handler.h
+/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/list_handler.h
+
+/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/list_handler.h
+

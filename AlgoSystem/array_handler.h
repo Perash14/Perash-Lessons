@@ -12,7 +12,7 @@ void printArrayHelp();
  */
 void arrayCommand(); // Declaration
 
-int addElement(int current_arr, int size);
+int* addElement(int* current_arr, int& size);
 void removeElement(int* current_arr, int size);
 void printArray(int* current_arr, int size);
 void sortArray(int* current_arr, int size);
