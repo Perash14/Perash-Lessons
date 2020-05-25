@@ -59,14 +59,20 @@ void removeElement(int* current_arr, int& size , bool sorted){
                     addElement(RecurringValueIndexArr, RecurringValueIndexArrSize, i);
                 }
             }
-            if(RecurringValueIndexArrSize == 0) cout << "This value doesn't exist within Your array, dipshit, try again" << endl; continue;
-            else if(RecurringValueIndexArrSize == 1){}
+            if(RecurringValueIndexArrSize == 0){
+                cout << "This value doesn't exist within Your array, dipshit, try again" << endl;
+                continue;
+            }
+            else if(RecurringValueIndexArrSize == 1){
+                for(int i = RecurringValueIndexArr[0];i < size;i++){
+                    current_arr[i] = current_arr[i+1];
+                }
+            }
             else{}//If the value exists more than once in currentarr then ask hime which ones he would like to delete
         }
-    }
-
-    else{
-        //Use the searcharray function
+        else{
+            //Use the searcharray function
+        }
     }
 }
 
