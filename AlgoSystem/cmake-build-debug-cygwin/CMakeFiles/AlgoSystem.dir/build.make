@@ -57,9 +57,22 @@ include CMakeFiles/AlgoSystem.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/AlgoSystem.dir/flags.make
 
+CMakeFiles/AlgoSystem.dir/AlgoManager.cpp.o: CMakeFiles/AlgoSystem.dir/flags.make
+CMakeFiles/AlgoSystem.dir/AlgoManager.cpp.o: ../AlgoManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/AlgoSystem.dir/AlgoManager.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AlgoSystem.dir/AlgoManager.cpp.o -c /cygdrive/d/Projects/Perash-Lessons/AlgoSystem/AlgoManager.cpp
+
+CMakeFiles/AlgoSystem.dir/AlgoManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AlgoSystem.dir/AlgoManager.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/Projects/Perash-Lessons/AlgoSystem/AlgoManager.cpp > CMakeFiles/AlgoSystem.dir/AlgoManager.cpp.i
+
+CMakeFiles/AlgoSystem.dir/AlgoManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AlgoSystem.dir/AlgoManager.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/Projects/Perash-Lessons/AlgoSystem/AlgoManager.cpp -o CMakeFiles/AlgoSystem.dir/AlgoManager.cpp.s
+
 CMakeFiles/AlgoSystem.dir/array_handler.cpp.o: CMakeFiles/AlgoSystem.dir/flags.make
 CMakeFiles/AlgoSystem.dir/array_handler.cpp.o: ../array_handler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/AlgoSystem.dir/array_handler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/AlgoSystem.dir/array_handler.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AlgoSystem.dir/array_handler.cpp.o -c /cygdrive/d/Projects/Perash-Lessons/AlgoSystem/array_handler.cpp
 
 CMakeFiles/AlgoSystem.dir/array_handler.cpp.i: cmake_force
@@ -72,7 +85,7 @@ CMakeFiles/AlgoSystem.dir/array_handler.cpp.s: cmake_force
 
 CMakeFiles/AlgoSystem.dir/list_handler.cpp.o: CMakeFiles/AlgoSystem.dir/flags.make
 CMakeFiles/AlgoSystem.dir/list_handler.cpp.o: ../list_handler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/AlgoSystem.dir/list_handler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AlgoSystem.dir/list_handler.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AlgoSystem.dir/list_handler.cpp.o -c /cygdrive/d/Projects/Perash-Lessons/AlgoSystem/list_handler.cpp
 
 CMakeFiles/AlgoSystem.dir/list_handler.cpp.i: cmake_force
@@ -85,7 +98,7 @@ CMakeFiles/AlgoSystem.dir/list_handler.cpp.s: cmake_force
 
 CMakeFiles/AlgoSystem.dir/char_handler.cpp.o: CMakeFiles/AlgoSystem.dir/flags.make
 CMakeFiles/AlgoSystem.dir/char_handler.cpp.o: ../char_handler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AlgoSystem.dir/char_handler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/AlgoSystem.dir/char_handler.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AlgoSystem.dir/char_handler.cpp.o -c /cygdrive/d/Projects/Perash-Lessons/AlgoSystem/char_handler.cpp
 
 CMakeFiles/AlgoSystem.dir/char_handler.cpp.i: cmake_force
@@ -98,7 +111,7 @@ CMakeFiles/AlgoSystem.dir/char_handler.cpp.s: cmake_force
 
 CMakeFiles/AlgoSystem.dir/algosystem.cpp.o: CMakeFiles/AlgoSystem.dir/flags.make
 CMakeFiles/AlgoSystem.dir/algosystem.cpp.o: ../algosystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/AlgoSystem.dir/algosystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/AlgoSystem.dir/algosystem.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AlgoSystem.dir/algosystem.cpp.o -c /cygdrive/d/Projects/Perash-Lessons/AlgoSystem/algosystem.cpp
 
 CMakeFiles/AlgoSystem.dir/algosystem.cpp.i: cmake_force
@@ -111,6 +124,7 @@ CMakeFiles/AlgoSystem.dir/algosystem.cpp.s: cmake_force
 
 # Object files for target AlgoSystem
 AlgoSystem_OBJECTS = \
+"CMakeFiles/AlgoSystem.dir/AlgoManager.cpp.o" \
 "CMakeFiles/AlgoSystem.dir/array_handler.cpp.o" \
 "CMakeFiles/AlgoSystem.dir/list_handler.cpp.o" \
 "CMakeFiles/AlgoSystem.dir/char_handler.cpp.o" \
@@ -119,13 +133,14 @@ AlgoSystem_OBJECTS = \
 # External object files for target AlgoSystem
 AlgoSystem_EXTERNAL_OBJECTS =
 
+AlgoSystem.exe: CMakeFiles/AlgoSystem.dir/AlgoManager.cpp.o
 AlgoSystem.exe: CMakeFiles/AlgoSystem.dir/array_handler.cpp.o
 AlgoSystem.exe: CMakeFiles/AlgoSystem.dir/list_handler.cpp.o
 AlgoSystem.exe: CMakeFiles/AlgoSystem.dir/char_handler.cpp.o
 AlgoSystem.exe: CMakeFiles/AlgoSystem.dir/algosystem.cpp.o
 AlgoSystem.exe: CMakeFiles/AlgoSystem.dir/build.make
 AlgoSystem.exe: CMakeFiles/AlgoSystem.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable AlgoSystem.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable AlgoSystem.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AlgoSystem.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

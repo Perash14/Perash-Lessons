@@ -49,7 +49,7 @@ void removeElement(int* current_arr, int& size , bool sorted){
     while(RecurringValueIndexArrSize == 0){
         cout << "Which number would you like to delete? ";
         cin >> ToFind;
-        if(sorted == false){
+        if(!sorted){
             //Making an array out of the indexes of the reouccuring value if it occurs more than once in current arr
 
             int RecurringValueIndexArrSize = 0;

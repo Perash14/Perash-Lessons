@@ -123,6 +123,33 @@ AlgoSystem/fast:
 	$(MAKE) -f CMakeFiles/AlgoSystem.dir/build.make CMakeFiles/AlgoSystem.dir/build
 .PHONY : AlgoSystem/fast
 
+AlgoManager.o: AlgoManager.cpp.o
+
+.PHONY : AlgoManager.o
+
+# target to build an object file
+AlgoManager.cpp.o:
+	$(MAKE) -f CMakeFiles/AlgoSystem.dir/build.make CMakeFiles/AlgoSystem.dir/AlgoManager.cpp.o
+.PHONY : AlgoManager.cpp.o
+
+AlgoManager.i: AlgoManager.cpp.i
+
+.PHONY : AlgoManager.i
+
+# target to preprocess a source file
+AlgoManager.cpp.i:
+	$(MAKE) -f CMakeFiles/AlgoSystem.dir/build.make CMakeFiles/AlgoSystem.dir/AlgoManager.cpp.i
+.PHONY : AlgoManager.cpp.i
+
+AlgoManager.s: AlgoManager.cpp.s
+
+.PHONY : AlgoManager.s
+
+# target to generate assembly for a file
+AlgoManager.cpp.s:
+	$(MAKE) -f CMakeFiles/AlgoSystem.dir/build.make CMakeFiles/AlgoSystem.dir/AlgoManager.cpp.s
+.PHONY : AlgoManager.cpp.s
+
 algosystem.o: algosystem.cpp.o
 
 .PHONY : algosystem.o
@@ -240,6 +267,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... AlgoSystem"
 	@echo "... edit_cache"
+	@echo "... AlgoManager.o"
+	@echo "... AlgoManager.i"
+	@echo "... AlgoManager.s"
 	@echo "... algosystem.o"
 	@echo "... algosystem.i"
 	@echo "... algosystem.s"

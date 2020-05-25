@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/AlgoManager.cpp">
+			<Option target="AlgoSystem"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/AlgoManager.h">
+			<Option target="AlgoSystem"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/algosystem.cpp">
 			<Option target="AlgoSystem"/>
 		</Unit>
