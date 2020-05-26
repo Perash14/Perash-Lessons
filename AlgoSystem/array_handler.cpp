@@ -68,7 +68,7 @@ void removeElement(int* current_arr, int& size , bool sorted){
                     current_arr[i] = current_arr[i+1];
                 }
             }
-            else{}//If the value exists more than once in currentarr then ask hime which ones he would like to delete
+            else{}//If the value exists more than once in currentarr then ask him which ones he would like to delete
         }
         else{
             //Use the searcharray function

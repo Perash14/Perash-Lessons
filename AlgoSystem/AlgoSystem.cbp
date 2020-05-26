@@ -31,6 +31,8 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="AlgoManager.cpp" />
+		<Unit filename="AlgoManager.h" />
 		<Unit filename="algosystem.cpp" />
 		<Unit filename="array_handler.cpp" />
 		<Unit filename="array_handler.h" />
