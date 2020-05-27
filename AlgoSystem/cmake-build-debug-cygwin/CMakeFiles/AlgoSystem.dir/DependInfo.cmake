@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/AlgoManager.cpp" "/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/CMakeFiles/AlgoSystem.dir/AlgoManager.cpp.o"
+  "/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/ArrayManager.cpp" "/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/CMakeFiles/AlgoSystem.dir/ArrayManager.cpp.o"
   "/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/algosystem.cpp" "/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/CMakeFiles/AlgoSystem.dir/algosystem.cpp.o"
   "/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/array_handler.cpp" "/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/CMakeFiles/AlgoSystem.dir/array_handler.cpp.o"
   "/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/char_handler.cpp" "/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/CMakeFiles/AlgoSystem.dir/char_handler.cpp.o"

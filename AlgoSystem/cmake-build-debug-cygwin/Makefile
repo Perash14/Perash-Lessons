@@ -150,6 +150,33 @@ AlgoManager.cpp.s:
 	$(MAKE) -f CMakeFiles/AlgoSystem.dir/build.make CMakeFiles/AlgoSystem.dir/AlgoManager.cpp.s
 .PHONY : AlgoManager.cpp.s
 
+ArrayManager.o: ArrayManager.cpp.o
+
+.PHONY : ArrayManager.o
+
+# target to build an object file
+ArrayManager.cpp.o:
+	$(MAKE) -f CMakeFiles/AlgoSystem.dir/build.make CMakeFiles/AlgoSystem.dir/ArrayManager.cpp.o
+.PHONY : ArrayManager.cpp.o
+
+ArrayManager.i: ArrayManager.cpp.i
+
+.PHONY : ArrayManager.i
+
+# target to preprocess a source file
+ArrayManager.cpp.i:
+	$(MAKE) -f CMakeFiles/AlgoSystem.dir/build.make CMakeFiles/AlgoSystem.dir/ArrayManager.cpp.i
+.PHONY : ArrayManager.cpp.i
+
+ArrayManager.s: ArrayManager.cpp.s
+
+.PHONY : ArrayManager.s
+
+# target to generate assembly for a file
+ArrayManager.cpp.s:
+	$(MAKE) -f CMakeFiles/AlgoSystem.dir/build.make CMakeFiles/AlgoSystem.dir/ArrayManager.cpp.s
+.PHONY : ArrayManager.cpp.s
+
 algosystem.o: algosystem.cpp.o
 
 .PHONY : algosystem.o
@@ -270,6 +297,9 @@ help:
 	@echo "... AlgoManager.o"
 	@echo "... AlgoManager.i"
 	@echo "... AlgoManager.s"
+	@echo "... ArrayManager.o"
+	@echo "... ArrayManager.i"
+	@echo "... ArrayManager.s"
 	@echo "... algosystem.o"
 	@echo "... algosystem.i"
 	@echo "... algosystem.s"

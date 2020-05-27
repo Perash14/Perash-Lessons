@@ -76,7 +76,7 @@ void removeElement(int* current_arr, int& size , bool sorted){
                 for(int i = RecurringValueIndexArr[0];i < size;i++){
                     current_arr[i] = current_arr[i+1];
                 }
-                current_arr = reduceArrSize(current_arr, size)
+                current_arr = reduceArrSize(current_arr, size);
             }
             else{}//If the value exists more than once in currentarr then ask him which ones he would like to delete
         }

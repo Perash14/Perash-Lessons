@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "AlgoSystem.exe"
   "AlgoSystem.pdb"
   "CMakeFiles/AlgoSystem.dir/AlgoManager.cpp.o"
+  "CMakeFiles/AlgoSystem.dir/ArrayManager.cpp.o"
   "CMakeFiles/AlgoSystem.dir/algosystem.cpp.o"
   "CMakeFiles/AlgoSystem.dir/array_handler.cpp.o"
   "CMakeFiles/AlgoSystem.dir/char_handler.cpp.o"

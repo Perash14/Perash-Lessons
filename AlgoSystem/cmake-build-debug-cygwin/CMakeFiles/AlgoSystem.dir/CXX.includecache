@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/AlgoManager.h
+/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/ArrayManager.cpp
+ArrayManager.h
+/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/ArrayManager.h
 
-/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/algosystem.cpp
-AlgoManager.h
-/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/AlgoManager.h
+/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/ArrayManager.h
 
