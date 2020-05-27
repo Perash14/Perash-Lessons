@@ -9,6 +9,8 @@ CMakeFiles/AlgoSystem.dir/AlgoManager.cpp.o: ../list_handler.h
 
 CMakeFiles/AlgoSystem.dir/ArrayManager.cpp.o: ../ArrayManager.cpp
 CMakeFiles/AlgoSystem.dir/ArrayManager.cpp.o: ../ArrayManager.h
+CMakeFiles/AlgoSystem.dir/ArrayManager.cpp.o: ../DataStructureParent.h
+CMakeFiles/AlgoSystem.dir/ArrayManager.cpp.o: ../globals.h
 
 CMakeFiles/AlgoSystem.dir/algosystem.cpp.o: ../AlgoManager.h
 CMakeFiles/AlgoSystem.dir/algosystem.cpp.o: ../algosystem.cpp

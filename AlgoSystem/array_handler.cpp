@@ -14,7 +14,7 @@ int RecieveElement(){
     return element;
 }
 
-int* reduceArrSize(int* current_arr, int size){
+int* reduceArrSize(int* current_arr, int& size){
     int* newArr = new int[size + 1];
     for(int i = 0;i < size;i++){
         newArr[i] = current_arr[i];

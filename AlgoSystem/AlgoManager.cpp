@@ -2,10 +2,10 @@
 // Created by Lotus on 25/05/2020.
 //
 #include <iostream>
-#include "array_handler.h"
 #include "list_handler.h"
 #include "char_handler.h"
 #include "AlgoManager.h"
+#include "ArrayManager.h"
 
 using namespace std;
 
@@ -45,7 +45,7 @@ void AlgoManager::startCommandLine(){
 
         switch(this->command) {
             //case 0: listCommand(); break;
-            case 1: arrayCommand(); break;
+            case 1: arrayCommand(); break; // TODO: Your mission bitch
             //case 2: charCommand(); break;
         }
     }
