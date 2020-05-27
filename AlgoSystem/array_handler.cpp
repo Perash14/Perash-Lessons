@@ -14,6 +14,15 @@ int RecieveElement(){
     return element;
 }
 
+int* reduceArrSize(int* current_arr, int size){
+    int* newArr = new int[size + 1];
+    for(int i = 0;i < size;i++){
+        newArr[i] = current_arr[i];
+    }
+    delete current_arr;
+    size--; // Changes the original
+    return newArr; // Returns the new array
+}
 
 int* addElement(int* current_arr, int& size, int element) {
 
@@ -67,6 +76,7 @@ void removeElement(int* current_arr, int& size , bool sorted){
                 for(int i = RecurringValueIndexArr[0];i < size;i++){
                     current_arr[i] = current_arr[i+1];
                 }
+                current_arr = reduceArrSize(current_arr, size)
             }
             else{}//If the value exists more than once in currentarr then ask him which ones he would like to delete
         }

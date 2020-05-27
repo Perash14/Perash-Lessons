@@ -44,9 +44,9 @@ void AlgoManager::startCommandLine(){
         }
 
         switch(this->command) {
-            case 0: listCommand(); break;
+            //case 0: listCommand(); break;
             case 1: arrayCommand(); break;
-            case 2: charCommand(); break;
+            //case 2: charCommand(); break;
         }
     }
 }

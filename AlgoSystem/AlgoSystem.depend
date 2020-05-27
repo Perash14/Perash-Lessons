@@ -27,3 +27,36 @@
 1589197194 source:e:\life\gitprojects\perash-lessons\algosystem\list_handler.cpp
 	"list_handler.h"
 
+1590413130 source:e:\life\coding\gitprojects\perash-lessons\algosystem\algomanager.cpp
+	<iostream>
+	"array_handler.h"
+	"list_handler.h"
+	"char_handler.h"
+	"AlgoManager.h"
+
+1590513204 e:\life\coding\gitprojects\perash-lessons\algosystem\array_handler.h
+
+1590513539 e:\life\coding\gitprojects\perash-lessons\algosystem\list_handler.h
+
+1590513539 e:\life\coding\gitprojects\perash-lessons\algosystem\char_handler.h
+
+1590413130 e:\life\coding\gitprojects\perash-lessons\algosystem\algomanager.h
+
+1590413130 source:e:\life\coding\gitprojects\perash-lessons\algosystem\algosystem.cpp
+	"AlgoManager.h"
+
+1590513539 source:e:\life\coding\gitprojects\perash-lessons\algosystem\char_handler.cpp
+	"char_handler.h"
+
+1590513539 source:e:\life\coding\gitprojects\perash-lessons\algosystem\list_handler.cpp
+	"list_handler.h"
+
+1590420630 source:e:\life\coding\gitprojects\perash-lessons\algosystem\array_handler.cpp
+	<iostream>
+	"array_handler.h"
+
+1590513141 source:e:\life\coding\gitprojects\perash-lessons\algosystem\src\arraymanager.cpp
+	"ArrayManager.h"
+
+1590507689 e:\life\coding\gitprojects\perash-lessons\algosystem\include\arraymanager.h
+
