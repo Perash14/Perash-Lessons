@@ -121,7 +121,7 @@ void arrayCommand() {
         }
 
         switch(command) {
-            case 0: arr = addElement(arr, arr_size, RecieveElement()); break;
+            //case 0: arr = addElement(arr, arr_size, RecieveElement()); break;
             case 1: removeElement(arr, arr_size, is_sorted); break;
             case 2: printArray(arr, arr_size); break;
             /*case 3: sortArray(arr, arr_size); break;

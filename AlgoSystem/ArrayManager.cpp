@@ -32,6 +32,7 @@ void ArrayManager::remove(int index) {
 }
 
 int ArrayManager::search(int element) {
+
     return 0;
 }
 
