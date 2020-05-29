@@ -15,6 +15,8 @@ public:
     virtual void sort() = 0;
     virtual void print() = 0;
     virtual void help() = 0;
+
+    virtual void dataStructureCommandLine() = 0;
 };
 
 

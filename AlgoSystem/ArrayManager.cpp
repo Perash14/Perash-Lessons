@@ -55,7 +55,7 @@ void ArrayManager::help() {
          "\t" << "|5 - Back|" << endl;
 }
 
-void ArrayManager::startCommandLine() {
+void ArrayManager::dataStructureCommandLine() {
     int command = -1;
     const int END_COMMAND = 5;
 

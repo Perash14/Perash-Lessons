@@ -43,9 +43,11 @@ void AlgoManager::startCommandLine(){
             break;
         }
 
+        ArrayManager arrayManager;
+
         switch(this->command) {
             //case 0: listCommand(); break;
-            case 1: arrayCommand(); break; // TODO: Your mission bitch
+            case 1: arrayManager.dataStructureCommandLine(); break; // TODO: Your mission bitch
             //case 2: charCommand(); break;
         }
     }

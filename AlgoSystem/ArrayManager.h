@@ -16,7 +16,7 @@ class ArrayManager : DataStructureParent
         void print() override;
         void help() override;
 
-        void startCommandLine();
+        void dataStructureCommandLine() override;
 
     private:
         int* arr;
