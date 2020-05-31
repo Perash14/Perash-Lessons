@@ -1,11 +1,10 @@
 #include "ArrayManager.h"
 #include <iostream>
 
-using namespace std;
-
 ArrayManager::ArrayManager()
 {
-    //ctor
+    this->arr = new int[0];
+    this->size = 0;
 }
 
 ArrayManager::~ArrayManager()
@@ -22,6 +21,7 @@ void ArrayManager::add(int element) {
     delete this->arr;
     this->size++; // Changes the original
     this->arr = newArr;
+    this->is_sorted = false;
 }
 
 void ArrayManager::remove(int index) {
@@ -31,43 +31,49 @@ void ArrayManager::remove(int index) {
     this->size--;
 }
 
-int ArrayManager::search(int index) {
+int ArrayManager::search(int value) {
     if(!is_sorted){
-
+        for(int i = 0; i < this->size; i++) {
+            if(arr[i] == value) return i;
+        }
+        return -1;
     }
     else{
-
+        // Binary search
     }
 }
 
 void ArrayManager::sort() {
     //SelectionSort
-    int MinimumIndex = 0;
-    int MaximumIndex = 0;
-    for(int i = 0;i < size - 1;i++){
-        for(int j = 0;j < size - 1 - i;j++){
-            if(arr[j] < arr[MinimumIndex])MinimumIndex = j;
-            if(arr[j] > arr[MaximumIndex])MaximumIndex = j;
+    int MinimumIndex, MaximumIndex;
+    for(int i = 0;i <= this->size / 2;i++){
+        MinimumIndex = i;
+        MaximumIndex = i;
+        for(int j = i; j <= this->size - 1 - i;j++){
+            if(this->arr[j] <= this->arr[MinimumIndex]) MinimumIndex = j;
+            if(this->arr[j] >= this->arr[MaximumIndex]) MaximumIndex = j;
         }
-        swap(arr[i], arr[MinimumIndex]);
-        swap(arr[size - 1 - i], arr[MaximumIndex]);
+        swap(this->arr[i], this->arr[MinimumIndex]);
+        swap(this->arr[size - 1 - i], this->arr[MaximumIndex]);
     }
+    this->is_sorted = true;
+    std::cout << "Sorted nigga!" << std::endl;
 }
 
 void ArrayManager::print() {
-    cout << "Your numbers are: ";
-    for(int i = 0;i < this->size - 1;i++) cout << this->arr[i] << ",";
-    cout << this->arr[this->size - 1] << "." << endl;
+    std::cout << "Your numbers are: ";
+    for(int i = 0;i < this->size - 1;i++) std::cout << this->arr[i] << ",";
+    std::cout << this->arr[this->size - 1] << "." << std::endl;
 }
 
 void ArrayManager::help() {
-    cout << "Which changes do you wish to make:" << endl <<
-         "\t" << "|0 - Add|" << endl <<
-         "\t" << "|1 - Remove|" << endl <<
-         "\t" << "|2 - Print|" << endl <<
-         "\t" << "|3 - Sort|" << endl <<
-         "\t" << "|4 - Search|" << endl <<
-         "\t" << "|5 - Back|" << endl;
+    std::cout << "Which changes do you wish to make:" << std::endl <<
+         "\t" << "|0 - Add|" << std::endl <<
+         "\t" << "|1 - Remove|" << std::endl <<
+         "\t" << "|2 - Print|" << std::endl <<
+         "\t" << "|3 - Sort|" << std::endl <<
+         "\t" << "|4 - Search|" << std::endl <<
+         "\t" << "|5 - Back|" << std::endl;
 }
 
 void ArrayManager::dataStructureCommandLine() {
@@ -76,18 +82,18 @@ void ArrayManager::dataStructureCommandLine() {
 
     while(command != END_COMMAND) {
         this->help();
-        cout << "Your choice: ";
-        cin >> command;
+        std::cout << "Your choice: ";
+        std::cin >> command;
 
         // Validate
         if(command < 0 || command > END_COMMAND) {
-            cout << "Wrong number bitch" << endl;
+            std::cout << "Wrong number bitch" << std::endl;
             continue;
         }
 
         // Check ending
         if(command == END_COMMAND) {
-            cout << "Back you go." << endl;
+            std::cout << "Back you go." << std::endl;
             break;
         }
 
@@ -96,7 +102,7 @@ void ArrayManager::dataStructureCommandLine() {
             case 1: this->remove(ReceiveElement()); break;
             case 2: this->print(); break;
             case 3: this->sort(); break;
-            case 4: this->search(ReceiveIndex()); break;
+            case 4: this->search(ReceiveElement()); break;
         }
     }
 }

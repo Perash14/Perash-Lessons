@@ -3,8 +3,10 @@
 
 CMakeFiles/AlgoSystem.dir/AlgoManager.cpp.o: ../AlgoManager.cpp
 CMakeFiles/AlgoSystem.dir/AlgoManager.cpp.o: ../AlgoManager.h
-CMakeFiles/AlgoSystem.dir/AlgoManager.cpp.o: ../array_handler.h
+CMakeFiles/AlgoSystem.dir/AlgoManager.cpp.o: ../ArrayManager.h
+CMakeFiles/AlgoSystem.dir/AlgoManager.cpp.o: ../DataStructureParent.h
 CMakeFiles/AlgoSystem.dir/AlgoManager.cpp.o: ../char_handler.h
+CMakeFiles/AlgoSystem.dir/AlgoManager.cpp.o: ../globals.h
 CMakeFiles/AlgoSystem.dir/AlgoManager.cpp.o: ../list_handler.h
 
 CMakeFiles/AlgoSystem.dir/ArrayManager.cpp.o: ../ArrayManager.cpp

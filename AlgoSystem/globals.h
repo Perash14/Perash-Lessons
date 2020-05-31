@@ -14,17 +14,10 @@ inline int ReceiveElement(){
     return element;
 }
 
-inline int ReceiveIndex(){
-    int index;
-    std::cout <<  "Which index would you like revealed: ";
-    std::cin >> index;
-    return index;
-}
-
-inline void swap(int* first, int* second){
-    int temp = *first;
-    *first = *second;
-    *second = temp;
+inline void swap(int& first, int& second){
+    int temp = first;
+    first = second;
+    second = temp;
 }
 
 #endif //ALGOSYSTEM_GLOBALS_H
