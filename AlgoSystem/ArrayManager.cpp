@@ -31,13 +31,27 @@ void ArrayManager::remove(int index) {
     this->size--;
 }
 
-int ArrayManager::search(int element) {
+int ArrayManager::search(int index) {
+    if(!is_sorted){
 
-    return 0;
+    }
+    else{
+
+    }
 }
 
 void ArrayManager::sort() {
-
+    //SelectionSort
+    int MinimumIndex = 0;
+    int MaximumIndex = 0;
+    for(int i = 0;i < size - 1;i++){
+        for(int j = 0;j < size - 1 - i;j++){
+            if(arr[j] < arr[MinimumIndex])MinimumIndex = j;
+            if(arr[j] > arr[MaximumIndex])MaximumIndex = j;
+        }
+        swap(arr[i], arr[MinimumIndex]);
+        swap(arr[size - 1 - i], arr[MaximumIndex]);
+    }
 }
 
 void ArrayManager::print() {
@@ -82,7 +96,7 @@ void ArrayManager::dataStructureCommandLine() {
             case 1: this->remove(ReceiveElement()); break;
             case 2: this->print(); break;
             case 3: this->sort(); break;
-            /*case 4: searchArray(arr, arr_size, is_sorted); break;*/
+            case 4: this->search(ReceiveIndex()); break;
         }
     }
 }
