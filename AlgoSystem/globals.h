@@ -7,11 +7,25 @@
 
 #include <iostream>
 
-inline int ReceiveElement(){
+inline int ReceiveAdd(){
     int element;
     std::cout <<  "Which number would you like to add: ";
     std::cin >> element;
     return element;
+}
+
+inline int RecieveRemove(){
+    int Index;
+    std::cout <<  "Which index would you like to delete: ";
+    std::cin >> Index;
+    return Index;
+}
+
+inline int RecieveSearch(){
+    int Index;
+    std::cout <<  "Which value's index would you like to revealed: ";
+    std::cin >> Index;
+    return Index;
 }
 
 inline void swap(int& first, int& second){

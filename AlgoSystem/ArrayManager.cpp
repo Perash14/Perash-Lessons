@@ -34,12 +34,20 @@ void ArrayManager::remove(int index) {
 int ArrayManager::search(int value) {
     if(!is_sorted){
         for(int i = 0; i < this->size; i++) {
-            if(arr[i] == value) return i;
+            std::cout << i;
+            if(arr[i] == value) return i; break;
+            if(i = this->size - 1) std::cout << "Unable to find inserted value within array, maybe it doesn't exist?" << std::endl;
         }
-        return -1;
     }
     else{
         // Binary search
+        int Ending = this->arr[this->size - 1];
+        int Start = this->arr[0];
+        while(Ending != Start){
+            if(value > this->arr[(Start + Ending)  / 2]) Start = (Start + Ending)  / 2;
+            else if (value < this->arr[(Start + Ending)  / 2]) Ending = (Start + Ending)  / 2;
+            else return (Start + Ending)  / 2;
+        }
     }
 }
 
@@ -57,7 +65,7 @@ void ArrayManager::sort() {
         swap(this->arr[size - 1 - i], this->arr[MaximumIndex]);
     }
     this->is_sorted = true;
-    std::cout << "Sorted nigga!" << std::endl;
+    std::cout << "Array sorted =)" << std::endl;
 }
 
 void ArrayManager::print() {
@@ -98,11 +106,11 @@ void ArrayManager::dataStructureCommandLine() {
         }
 
         switch(command) {
-            case 0: this->add(ReceiveElement()); break;
-            case 1: this->remove(ReceiveElement()); break;
+            case 0: this->add(ReceiveAdd()); break;
+            case 1: this->remove(RecieveRemove()); break;
             case 2: this->print(); break;
             case 3: this->sort(); break;
-            case 4: this->search(ReceiveElement()); break;
+            case 4: std::cout << "Your Numbers index is: " << this->search(RecieveSearch()) << std::endl; break;
         }
     }
 }
