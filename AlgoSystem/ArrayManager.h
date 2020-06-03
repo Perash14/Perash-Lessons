@@ -11,7 +11,7 @@ class ArrayManager : DataStructureParent
 
         void add(int element) override;
         void remove(int index) override;
-        int search(int element) override;
+        void search(int value) override;
         void sort() override;
         void print() override;
         void help() override;

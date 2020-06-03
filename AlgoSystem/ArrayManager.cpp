@@ -31,12 +31,14 @@ void ArrayManager::remove(int index) {
     this->size--;
 }
 
-int ArrayManager::search(int value) {
+void ArrayManager::search(int value) {
     if(!is_sorted){
         for(int i = 0; i < this->size; i++) {
-            std::cout << i;
-            if(arr[i] == value) return i; break;
-            if(i = this->size - 1) std::cout << "Unable to find inserted value within array, maybe it doesn't exist?" << std::endl;
+            if(this->arr[i] == value){
+                std::cout << "Your Numbers index is: " << i << std::endl;
+                break;
+            }
+            if(i == this->size - 1) std::cout << "Unable to find inserted value within array, maybe it doesn't exist?" << std::endl;
         }
     }
     else{
@@ -46,7 +48,7 @@ int ArrayManager::search(int value) {
         while(Ending != Start){
             if(value > this->arr[(Start + Ending)  / 2]) Start = (Start + Ending)  / 2;
             else if (value < this->arr[(Start + Ending)  / 2]) Ending = (Start + Ending)  / 2;
-            else return (Start + Ending)  / 2;
+            else std::cout << "Your Numbers index is: " << (Start + Ending)  / 2 << std::endl;
         }
     }
 }
@@ -56,7 +58,7 @@ void ArrayManager::sort() {
     int MinimumIndex, MaximumIndex;
     for(int i = 0;i <= this->size / 2;i++){
         MinimumIndex = i;
-        MaximumIndex = i;
+        MaximumIndex = size - 1 - i;
         for(int j = i; j <= this->size - 1 - i;j++){
             if(this->arr[j] <= this->arr[MinimumIndex]) MinimumIndex = j;
             if(this->arr[j] >= this->arr[MaximumIndex]) MaximumIndex = j;
@@ -110,7 +112,7 @@ void ArrayManager::dataStructureCommandLine() {
             case 1: this->remove(RecieveRemove()); break;
             case 2: this->print(); break;
             case 3: this->sort(); break;
-            case 4: std::cout << "Your Numbers index is: " << this->search(RecieveSearch()) << std::endl; break;
+            case 4: this->search(RecieveSearch()); break;
         }
     }
 }
