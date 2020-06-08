@@ -37,6 +37,8 @@
 		<Unit filename="AlgoManager.h" />
 		<Unit filename="ArrayManager.cpp" />
 		<Unit filename="ArrayManager.h" />
+		<Unit filename="CharManager.cpp" />
+		<Unit filename="CharManager.h" />
 		<Unit filename="DataStructureParent.h" />
 		<Unit filename="algosystem.cpp" />
 		<Unit filename="array_handler.cpp" />

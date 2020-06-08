@@ -34,4 +34,26 @@ inline void swap(int& first, int& second){
     second = temp;
 }
 
+inline char ReceiveAddChar(){
+    char element;
+    std::cout <<  "Which character would you like to add: ";
+    std::cin >> element;
+    return element;
+}
+
+inline char RecieveRemoveChar(){
+    char Index;
+    std::cout <<  "Which index would you like to delete: ";
+    std::cin >> Index;
+    return Index;
+}
+
+inline char RecieveSearchChar(){
+    char Index;
+    std::cout <<  "Which characters index would you like to revealed: ";
+    std::cin >> Index;
+    return Index;
+}
+
+
 #endif //ALGOSYSTEM_GLOBALS_H
