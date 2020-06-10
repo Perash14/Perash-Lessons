@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/AlgoManager.cpp" "/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/CMakeFiles/AlgoSystem.dir/AlgoManager.cpp.o"
-  "/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/ArrayManager.cpp" "/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/CMakeFiles/AlgoSystem.dir/ArrayManager.cpp.o"
-  "/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/algosystem.cpp" "/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/CMakeFiles/AlgoSystem.dir/algosystem.cpp.o"
-  "/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/array_handler.cpp" "/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/CMakeFiles/AlgoSystem.dir/array_handler.cpp.o"
-  "/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/char_handler.cpp" "/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/CMakeFiles/AlgoSystem.dir/char_handler.cpp.o"
-  "/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/list_handler.cpp" "/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/CMakeFiles/AlgoSystem.dir/list_handler.cpp.o"
+  "/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/AlgoManager.cpp" "/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/cmake-build-debug-cygwin/CMakeFiles/AlgoSystem.dir/AlgoManager.cpp.o"
+  "/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/ArrayManager.cpp" "/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/cmake-build-debug-cygwin/CMakeFiles/AlgoSystem.dir/ArrayManager.cpp.o"
+  "/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/algosystem.cpp" "/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/cmake-build-debug-cygwin/CMakeFiles/AlgoSystem.dir/algosystem.cpp.o"
+  "/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/array_handler.cpp" "/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/cmake-build-debug-cygwin/CMakeFiles/AlgoSystem.dir/array_handler.cpp.o"
+  "/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/char_handler.cpp" "/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/cmake-build-debug-cygwin/CMakeFiles/AlgoSystem.dir/char_handler.cpp.o"
+  "/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/list_handler.cpp" "/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/cmake-build-debug-cygwin/CMakeFiles/AlgoSystem.dir/list_handler.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

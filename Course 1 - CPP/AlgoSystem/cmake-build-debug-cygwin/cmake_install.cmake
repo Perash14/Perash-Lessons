@@ -1,4 +1,4 @@
-# Install script for directory: /cygdrive/d/Projects/Perash-Lessons/AlgoSystem
+# Install script for directory: /cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/cmake-build-debug-cygwin/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

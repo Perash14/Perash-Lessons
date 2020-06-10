@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin"/>
+				<Option working_dir="/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/cmake-build-debug-cygwin"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/Course\ 1\ -\ CPP/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/Course\ 1\ -\ CPP/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/Course\ 1\ -\ CPP/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/Course\ 1\ -\ CPP/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin"/>
+				<Option working_dir="/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/cmake-build-debug-cygwin"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/Course\ 1\ -\ CPP/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/Course\ 1\ -\ CPP/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/Course\ 1\ -\ CPP/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/Course\ 1\ -\ CPP/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="AlgoSystem">
-				<Option output="/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/AlgoSystem.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin"/>
+				<Option output="/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/cmake-build-debug-cygwin/AlgoSystem.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/cmake-build-debug-cygwin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -42,15 +42,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.2.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 AlgoSystem"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/Course\ 1\ -\ CPP/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 AlgoSystem"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/Course\ 1\ -\ CPP/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/Course\ 1\ -\ CPP/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/Course\ 1\ -\ CPP/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="AlgoSystem/fast">
-				<Option output="/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/AlgoSystem.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin"/>
+				<Option output="/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/cmake-build-debug-cygwin/AlgoSystem.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/cmake-build-debug-cygwin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -63,57 +63,57 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.2.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 AlgoSystem/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/Course\ 1\ -\ CPP/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 AlgoSystem/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/Course\ 1\ -\ CPP/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/Course\ 1\ -\ CPP/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/Course\ 1\ -\ CPP/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin"/>
+				<Option working_dir="/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/cmake-build-debug-cygwin"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/Course\ 1\ -\ CPP/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/Course\ 1\ -\ CPP/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/Course\ 1\ -\ CPP/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Projects/Perash-Lessons/Course\ 1\ -\ CPP/AlgoSystem/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/AlgoManager.cpp">
+		<Unit filename="/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/AlgoManager.cpp">
 			<Option target="AlgoSystem"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/AlgoManager.h">
+		<Unit filename="/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/AlgoManager.h">
 			<Option target="AlgoSystem"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/ArrayManager.cpp">
+		<Unit filename="/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/ArrayManager.cpp">
 			<Option target="AlgoSystem"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/ArrayManager.h">
+		<Unit filename="/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/ArrayManager.h">
 			<Option target="AlgoSystem"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/algosystem.cpp">
+		<Unit filename="/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/algosystem.cpp">
 			<Option target="AlgoSystem"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/array_handler.cpp">
+		<Unit filename="/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/array_handler.cpp">
 			<Option target="AlgoSystem"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/array_handler.h">
+		<Unit filename="/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/array_handler.h">
 			<Option target="AlgoSystem"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/char_handler.cpp">
+		<Unit filename="/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/char_handler.cpp">
 			<Option target="AlgoSystem"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/char_handler.h">
+		<Unit filename="/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/char_handler.h">
 			<Option target="AlgoSystem"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/list_handler.cpp">
+		<Unit filename="/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/list_handler.cpp">
 			<Option target="AlgoSystem"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/list_handler.h">
+		<Unit filename="/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/list_handler.h">
 			<Option target="AlgoSystem"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/Projects/Perash-Lessons/AlgoSystem/CMakeLists.txt">
+		<Unit filename="/cygdrive/d/Projects/Perash-Lessons/Course 1 - CPP/AlgoSystem/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

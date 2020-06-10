@@ -43,28 +43,31 @@ void ArrayManager::search(int value) {
     }
     else{
         // Binary search
-        int Ending = this->arr[this->size - 1];
-        int Start = this->arr[0];
-        while(Ending != Start){
-            if(value > this->arr[(Start + Ending)  / 2]) Start = (Start + Ending)  / 2;
-            else if (value < this->arr[(Start + Ending)  / 2]) Ending = (Start + Ending)  / 2;
-            else std::cout << "Your Numbers index is: " << (Start + Ending)  / 2 << std::endl;
+        int ending = this->size - 1;
+        int start = 0;
+        while(ending != start){
+            if(value > this->arr[(start + ending)  / 2]) start = (start + ending)  / 2;
+            else if (value < this->arr[(start + ending)  / 2]) ending = (start + ending)  / 2;
+            else {
+                std::cout << "Your Numbers index is: " << (start + ending)  / 2 << std::endl;
+                break;
+            }
         }
     }
 }
 
 void ArrayManager::sort() {
     //SelectionSort
-    int MinimumIndex, MaximumIndex;
-    for(int i = 0;i <= this->size / 2;i++){
-        MinimumIndex = i;
-        MaximumIndex = size - 1 - i;
-        for(int j = i; j <= this->size - 1 - i;j++){
-            if(this->arr[j] <= this->arr[MinimumIndex]) MinimumIndex = j;
-            if(this->arr[j] >= this->arr[MaximumIndex]) MaximumIndex = j;
+    int minimumIndex, maximumIndex;
+    for(int i = 0; i <= this->size / 2 + (this->size % 2); i++){
+        minimumIndex = i;
+        maximumIndex = size - i - 1;
+        for(int j = i; j <= this->size - i - 1;j++){
+            if(this->arr[j] <= this->arr[minimumIndex]) minimumIndex = j;
+            else if(this->arr[j] >= this->arr[maximumIndex]) maximumIndex = j;
         }
-        swap(this->arr[i], this->arr[MinimumIndex]);
-        swap(this->arr[size - 1 - i], this->arr[MaximumIndex]);
+        swap(this->arr[i], this->arr[minimumIndex]);
+        swap(this->arr[size - i - 1], this->arr[maximumIndex]);
     }
     this->is_sorted = true;
     std::cout << "Array sorted =)" << std::endl;
