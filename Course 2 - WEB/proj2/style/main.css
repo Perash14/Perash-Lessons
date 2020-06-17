@@ -3,8 +3,9 @@
 }
 
 .box {
+    position: relative;
     background-color: #e76873;
-    width: 50px;
+    width: 15%;
     height: 50px;
     margin: 5px;
     float: left;
