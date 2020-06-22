@@ -2,6 +2,7 @@
     <head>
         <title>My Game | Home</title>
         <link rel="stylesheet" type="text/css" href="style/main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="script/main.js"></script>
     </head>
 
@@ -9,7 +10,16 @@
         <!-- Navigator -->
         <div id="nav">
             <!-- Navigator elements -->
-            <a href="index.html"><div class="nav_elem active_nav">Home</div></a>
+            <a href="index.html" id="test">
+                <div class="nav_elem active_nav" id="home">
+                    Home
+                    <ul class="dropdown">
+                        <li>Sub 1</li>
+                        <li>Sub 2</li>
+                        <li>Sub 3</li>
+                    </ul>
+                </div>
+            </a>
             <a href="game.html"><div class="nav_elem">Game</div></a>
         </div>
 
