@@ -7,10 +7,11 @@ body {
     left:0;
     padding: 5px;
     width: 100%;
-    text-align: center;
     top: 0;
     border-bottom: 1px solid black;
     display: flex;
+    background-color: #000000;
+    text-align: center;
     justify-content: center;
 }
 
@@ -18,10 +19,21 @@ body {
     max-width: 50px;
     min-height: 20px;
     margin-right: 5px;
-    border: 1px solid black;
+    border: 1px solid #ff008c;
     float: left;
     padding: 5px;
     border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.container img {
+    max-width: 23%;
+    height: auto;
+}
+
+#nav_menu_icon {
+    float: left;
+    margin-left: -90%;
 }
 
 .nav_elem:hover {
