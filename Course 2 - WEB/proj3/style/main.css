@@ -11,15 +11,14 @@ body {
     border-bottom: 1px solid black;
     display: flex;
     background-color: #000000;
-    text-align: center;
-    justify-content: center;
+    
 }
 
 .nav_elem {
     max-width: 50px;
     min-height: 20px;
     margin-right: 5px;
-    border: 1px solid #ff008c;
+    border: 1px solid #da00c7;
     float: left;
     padding: 5px;
     border-radius: 5px;
@@ -27,13 +26,20 @@ body {
 }
 
 .container img {
-    max-width: 23%;
-    height: auto;
+    width: 32px;
+    height: 32px;
 }
 
 #nav_menu_icon {
     float: left;
-    margin-left: -90%;
+    width: 32px;
+    height: 32px;
+}
+
+#NavMenus {
+    justify-content: center;
+    text-align: center;
+    margin-left: 45%;
 }
 
 .nav_elem:hover {
