@@ -39,6 +39,9 @@ console.log(obj['lol']);
 console.log(post);
 let init_height = 0;
 
+//Better not to use var as a standard thing
+let sidebarposition = false;
+
 /**
  * A function that runs only after the HTML document has been loaded fully
  * Used to retrieve data about element after they are present in the document to avoid bugs
@@ -71,6 +74,22 @@ $(document).ready(function() {
         'margin-top': rand_x + 'px',
         'margin-left': rand_y + 'px'
     });
+
+    //Bringing out sidebar on click
+    $('#nav_menu_icon').click(
+        function(){
+            if(sidebarposition == false){
+                
+            }
+            else if(sidebarposition == true){
+                
+            }
+        }
+    )
+    
+    //Switching colour on menu icon when hover
+    
+    //Switching colour on menu icon when sidebar is open
 });
 
 
