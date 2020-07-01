@@ -78,8 +78,17 @@ $(document).ready(function() {
 
     //Bringing out sidebar on click
     $('#nav_menu_icon').click(
-        () => { $('#sidebar').animate({width: 'toggle'}, 500); }
-    )
+        () => { $('#sidebar').animate({width: 'toggle'}, 500);
+            if(!sidebarposition){
+                $('#nav_toggle').attr({src: "images/OpenBarMenuIcon.png", alt:"menu icon"});
+                sidebarposition = true; 
+            }
+            else{
+                $('#nav_toggle').attr({src: "images/MenuIcon.png", alt:"menu icon"});
+                sidebarposition = false;
+            }
+        }
+    );
     
     //Switching colour on menu icon when hover
     $('#nav_toggle').hover(
