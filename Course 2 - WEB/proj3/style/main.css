@@ -4,9 +4,7 @@ body {
 
 #nav {
     position: relative;
-
     padding: 5px;
-    width: 100%;
     top: 0%;
     border-bottom: 1px solid black;
     display: flex;
@@ -25,6 +23,7 @@ body {
     background-color: #ffffff;
 }
 
+/* For all <img> inside class container */
 .container img {
     width: 32px;
     height: 32px;

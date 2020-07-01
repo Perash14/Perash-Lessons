@@ -52,6 +52,7 @@ $(document).ready(function() {
     // $('.some_class').some_function_or_property_of_that_element(); -> <element class="some_class"> </element>
 
     // Drop down menu logic
+    $('#sidebar').hide();
     $('.dropdown').hide();
     init_height = $('#nav').height(); // Getting a property
     
@@ -77,17 +78,30 @@ $(document).ready(function() {
 
     //Bringing out sidebar on click
     $('#nav_menu_icon').click(
-        function(){
-            if(sidebarposition == false){
-                
-            }
-            else if(sidebarposition == true){
-                
-            }
-        }
+        () => { $('#sidebar').animate({width: 'toggle'}, 500); }
     )
     
     //Switching colour on menu icon when hover
+    $('#nav_toggle').hover(
+        () => { // Mouse in
+            $('#nav_toggle').css({ opacity: '0.5'});
+        }, () => { // Mouse out
+            $('#nav_toggle').css({ opacity: '1'});
+        }
+    );
+
+    let clicked = true;
+    $('#box').click(function() {
+        // What happens when you click
+        if(clicked) {
+            $('#box').animate({width: '100px', height: '100px'}, 500);
+            clicked = false;
+        }
+        else {
+            $('#box').animate({width: '50px', height: '50px'}, 500);
+            clicked = true;
+        }
+    });
     
     //Switching colour on menu icon when sidebar is open
 });
@@ -108,22 +122,24 @@ function game_step(element) {
 
     let pos_x_new = Math.floor(Math.random() * ($(window).width() - 2 * element.offsetWidth));
     let pos_y_new = Math.floor(Math.random() * ($(window).height() - 2 * element.offsetHeight));
-    let id = setInterval(function() { animate(); }, 1);
+    let step_x = 0, step_y = 0;
+    let dis_x = pos_x_new - pos_x;
+    let dis_y = pos_y_new - pos_y;
+    let distance = Math.sqrt(dis_x * dis_x + dis_y * dis_y);
+    step_x = dis_x / distance;
+    step_y = dis_y / distance;
 
+    
+    let id = setInterval(function() { animate(); }, 1);
     function animate() {
         // When the animation stops
-        if(pos_x == pos_x_new && pos_y == pos_y_new) {
+        if(Math.floor(pos_x) == pos_x_new && Math.floor(pos_y) == pos_y_new) {
             clearInterval(id);
         }
         else {
-            if(pos_y != pos_y_new) {
-               if(pos_y > pos_y_new) pos_y--;
-               else pos_y++;
-            }
-            if(pos_x != pos_x_new) {
-                if(pos_x > pos_x_new) pos_x--;
-                else pos_x++;
-            }
+            if(Math.floor(pos_y) != pos_y_new) pos_y += step_y;
+            if(Math.floor(pos_x) != pos_x_new) pos_x += step_x;
+
             // Update prev value
             $('#box').css({
                 'margin-top' : pos_y + 'px',
