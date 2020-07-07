@@ -52,7 +52,6 @@ $(document).ready(function() {
     // $('.some_class').some_function_or_property_of_that_element(); -> <element class="some_class"> </element>
 
     // Drop down menu logic
-    $('#sidebar').hide();
     $('.dropdown').hide();
     init_height = $('#nav').height(); // Getting a property
     
@@ -68,15 +67,11 @@ $(document).ready(function() {
         }
     );
 
-    // Box game logic
-    let rand_x = Math.floor(Math.random() * ($(window).height() - 2 * $('#box').height()));
-    let rand_y = Math.floor(Math.random() * ($(window).width() - 2 * $('#box').width()));
-    $('#box').css({
-        'margin-top': rand_x + 'px',
-        'margin-left': rand_y + 'px'
-    });
-
-    //Bringing out sidebar on click
+    /*
+    Sidebar
+    */
+    $('#sidebar').hide();
+    //Bringing out sidebar on click, Switch menu icon colour when click
     $('#nav_menu_icon').click(
         () => { $('#sidebar').animate({width: 'toggle'}, 500);
             if(!sidebarposition){
@@ -98,6 +93,17 @@ $(document).ready(function() {
             $('#nav_toggle').css({ opacity: '1'});
         }
     );
+    
+    /*
+    BoxGame
+    */
+    // Box game logic
+    let rand_x = Math.floor(Math.random() * ($(window).height() - 2 * $('#box').height()));
+    let rand_y = Math.floor(Math.random() * ($(window).width() - 2 * $('#box').width()));
+    $('#box').css({
+        'margin-top': rand_x + 'px',
+        'margin-left': rand_y + 'px'
+    });
 
     let clicked = true;
     $('#box').click(function() {
@@ -111,8 +117,10 @@ $(document).ready(function() {
             clicked = true;
         }
     });
-    
-    //Switching colour on menu icon when sidebar is open
+
+    if(sidebarposition == true){
+        $('content').width('90%');
+    }
 });
 
 
