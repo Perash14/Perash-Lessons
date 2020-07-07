@@ -41,6 +41,8 @@ let init_height = 0;
 
 //Better not to use var as a standard thing
 let sidebarposition = false;
+let moving_box = false;
+let clicked = true;
 
 /**
  * A function that runs only after the HTML document has been loaded fully
@@ -105,26 +107,24 @@ $(document).ready(function() {
         'margin-left': rand_y + 'px'
     });
 
-    let clicked = true;
-    $('#box').click(function() {
-        // What happens when you click
-        if(clicked) {
-            $('#box').animate({width: '100px', height: '100px'}, 500);
-            clicked = false;
-        }
-        else {
-            $('#box').animate({width: '50px', height: '50px'}, 500);
-            clicked = true;
-        }
-    });
-
     if(sidebarposition == true){
         $('content').width('90%');
     }
 });
 
-
 function game_step(element) {
+    if(moving_box) return;
+    moving_box = true;
+
+    if(clicked) {
+        $('#box').animate({width: '100px', height: '100px'}, 500);
+        clicked = false;
+    }
+    else {
+        $('#box').animate({width: '50px', height: '50px'}, 500);
+        clicked = true;
+    }
+
     let pos_y = element.style.marginTop;
     let pos_x = element.style.marginLeft;
 
@@ -136,9 +136,11 @@ function game_step(element) {
         pos_x = parseInt(pos_x.substring(0, pos_x.indexOf('px')));
     } else pos_x = 0;
 
-
+    // Generate new position
     let pos_x_new = Math.floor(Math.random() * ($(window).width() - 2 * element.offsetWidth));
     let pos_y_new = Math.floor(Math.random() * ($(window).height() - 2 * element.offsetHeight));
+
+    // Calculate step size in each direction
     let step_x = 0, step_y = 0;
     let dis_x = pos_x_new - pos_x;
     let dis_y = pos_y_new - pos_y;
@@ -146,11 +148,12 @@ function game_step(element) {
     step_x = dis_x / distance;
     step_y = dis_y / distance;
 
-    
+    // Move
     let id = setInterval(function() { animate(); }, 1);
     function animate() {
         // When the animation stops
         if(Math.floor(pos_x) == pos_x_new && Math.floor(pos_y) == pos_y_new) {
+            moving_box = false;
             clearInterval(id);
         }
         else {

@@ -3,7 +3,24 @@
         <title>My Game | Game</title>
         <link rel="stylesheet" type="text/css" href="style/main.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script src="script/main.js"></script>
+
+        <script>
+            // Vue code
+            let app = new Vue({
+                el: "#content",
+                data: {
+                    box_position_x: 0,
+                    box_position_y: 0
+                },
+                created() {
+                    // Create random positions
+                    this.box_position_x = Math.floor(Math.random() * ($(window).height() - 2 * $('#box').height()));
+                    this.box_position_y = Math.floor(Math.random() * ($(window).width() - 2 * $('#box').width()));
+                }
+            });
+        </script>
     </head>
 
     <body>
@@ -22,16 +39,14 @@
             <div id="NavMenus">
                 <!-- Navigator elements -->
                 <a href="index.html"><div class="nav_elem">Home</div></a>
-                <a href="game.html"><div class="nav_elem active_nav">Game</div></a>
-                <a href="vueGame.html"><div class="nav_elem">Vue Game</div></a>
+                <a href="game.html"><div class="nav_elem">Game</div></a>
+                <a href="vueGame.html"><div class="nav_elem active_nav">Vue Game</div></a>
             </div>
         </div>
 
         <!-- Content -->
         <div id="content">
-            <div id="box" onclick="game_step(this)"></div>
-            <!-- Main content -->
-            <!-- Side bar -->
+            {{ box_position_x }}
         </div>
 
         <!-- Footer -->
