@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #3b3535;
 }
 
 #nav {
@@ -23,7 +24,7 @@ body {
     background-color: #ffffff;
 }
 
-/* For all <img> inside class container */
+/* For all <img> inside class container on nav */
 .container img {
     width: 32px;
     height: 32px;
@@ -70,7 +71,7 @@ body {
     position: relative;
 }
 
-#box {
+.box {
     position: absolute;
     background-color: #e76873;
     width: 50px;

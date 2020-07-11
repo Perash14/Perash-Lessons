@@ -42,7 +42,7 @@ let init_height = 0;
 //Better not to use var as a standard thing
 let sidebarposition = false;
 let moving_box = false;
-let clicked = true;
+let ClickTransform = true;
 
 /**
  * A function that runs only after the HTML document has been loaded fully
@@ -112,19 +112,22 @@ $(document).ready(function() {
     }
 });
 
+//ChangesMade == Switched box from id to class/ replaced it throughout the gamestep function, thats all
 function game_step(element) {
     if(moving_box) return;
     moving_box = true;
 
-    if(clicked) {
-        $('#box').animate({width: '100px', height: '100px'}, 500);
-        clicked = false;
+    //Change the box size when click
+    if(ClickTransform) {
+        $('.box').animate({width: '100px', height: '100px'}, 500);
+        ClickTransform = false;
     }
     else {
-        $('#box').animate({width: '50px', height: '50px'}, 500);
-        clicked = true;
+        $('.box').animate({width: '50px', height: '50px'}, 500);
+        ClickTransform = true;
     }
 
+    //Transforming the position of the box from the css file to a JavaScript variable
     let pos_y = element.style.marginTop;
     let pos_x = element.style.marginLeft;
 
@@ -161,7 +164,7 @@ function game_step(element) {
             if(Math.floor(pos_x) != pos_x_new) pos_x += step_x;
 
             // Update prev value
-            $('#box').css({
+            $('.box').css({
                 'margin-top' : pos_y + 'px',
                 'margin-left' : pos_x + 'px'
             });
