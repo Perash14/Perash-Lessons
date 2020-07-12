@@ -100,12 +100,14 @@ $(document).ready(function() {
     BoxGame
     */
     // Box game logic
-    let rand_x = Math.floor(Math.random() * ($(window).height() - 2 * $('#box').height()));
-    let rand_y = Math.floor(Math.random() * ($(window).width() - 2 * $('#box').width()));
-    $('#box').css({
-        'margin-top': rand_x + 'px',
-        'margin-left': rand_y + 'px'
-    });
+    $('.box').map(function() {
+        let rand_x = Math.floor(Math.random() * ($(window).height() - 2 * $('#box').height()));
+        let rand_y = Math.floor(Math.random() * ($(window).width() - 2 * $('#box').width()));
+        $('#' + this.id).css({
+            'margin-top': rand_x + 'px',
+            'margin-left': rand_y + 'px'
+        });
+    }).get();
 
     if(sidebarposition == true){
         $('content').width('90%');
@@ -119,11 +121,11 @@ function game_step(element) {
 
     //Change the box size when click
     if(ClickTransform) {
-        $('.box').animate({width: '100px', height: '100px'}, 500);
+        $('#' + element.id).animate({width: '100px', height: '100px'}, 500);
         ClickTransform = false;
     }
     else {
-        $('.box').animate({width: '50px', height: '50px'}, 500);
+        $('#' + element.id).animate({width: '50px', height: '50px'}, 500);
         ClickTransform = true;
     }
 
@@ -164,7 +166,7 @@ function game_step(element) {
             if(Math.floor(pos_x) != pos_x_new) pos_x += step_x;
 
             // Update prev value
-            $('.box').css({
+            $('#' + element.id).css({
                 'margin-top' : pos_y + 'px',
                 'margin-left' : pos_x + 'px'
             });

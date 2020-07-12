@@ -7,18 +7,69 @@
         <script src="script/main.js"></script>
 
         <script>
-            // Vue code
-            let app = new Vue({
-                el: "#content",
-                data: {
-                    box_position_x: 0,
-                    box_position_y: 0
-                },
-                created() {
-                    // Create random positions
-                    this.box_position_x = Math.floor(Math.random() * ($(window).height() - 2 * $('#box').height()));
-                    this.box_position_y = Math.floor(Math.random() * ($(window).width() - 2 * $('#box').width()));
-                }
+            $(document).ready(function() {
+                // Vue code
+                let app = new Vue({
+                    el: "#content",
+                    data: {
+                        box: {
+                            x: 0,
+                            y: 0,
+                            width: 50,
+                            height: 50,
+                            max_width: 100,
+                            max_height: 100,
+                            min_width: 50,
+                            min_height: 50,
+                            moving: false
+                        },
+                    },
+                    created() {
+                        // Create random positions
+                        this.box.x = Math.floor(Math.random() * ($(window).height() - 2 * this.box.height));
+                        this.box.y = Math.floor(Math.random() * ($(window).width() - 2 * this.box.width));
+                    },
+                    methods: {
+                        gameMove: function() {
+                            if(this.box.moving) return;
+                            this.box.moving = true;
+
+                            let new_x = Math.floor(Math.random() * ($(window).height() - 2 * this.box.height));
+                            let new_y = Math.floor(Math.random() * ($(window).width() - 2 * this.box.width));
+
+                            let step_x = 0, step_y = 0;
+                            let dis_x = new_x - this.box.x;
+                            let dis_y = new_y - this.box.y;
+                            let distance = Math.sqrt(dis_x * dis_x + dis_y * dis_y);
+                            step_x = dis_x / distance;
+                            step_y = dis_y / distance;
+
+                            let grow_width = 0, grow_height = 0;
+                            let end_width = (Math.floor(this.box.width) == this.box.max_width ? this.box.min_width : this.box.max_width);
+                            let end_height = (Math.floor(this.box.height) == this.box.max_height ? this.box.min_height : this.box.max_height);
+                            let width_step = (end_width - this.box.width) / distance;
+                            let height_step = (end_height - this.box.height) / distance;
+                            console.log(width_step);console.log(height_step);
+     
+                            let id = setInterval(function() { animate(); }, 1);
+                            let handler = this;
+                            function animate() {
+                                // When the animation stops
+                                if(Math.floor(handler.box.x) == new_x && Math.floor(handler.box.y) == new_y
+                                    && Math.floor(handler.box.width) == end_width && Math.floor(handler.box.height) == end_height){
+                                    handler.box.moving = false;
+                                    clearInterval(id);
+                                }
+                                else {
+                                    if(Math.floor(handler.box.y) != new_y) handler.box.y += step_y;
+                                    if(Math.floor(handler.box.x) != new_x) handler.box.x += step_x;
+                                    if(Math.floor(handler.box.width) != end_width) handler.box.width += width_step;
+                                    if(Math.floor(handler.box.height) != end_height) handler.box.height += height_step;
+                                }
+                            }
+                        }
+                    }
+                });
             });
         </script>
     </head>
@@ -46,7 +97,14 @@
 
         <!-- Content -->
         <div id="content">
-            {{ box_position_x }}
+            <h1 v-if="box.moving" stlye="position: relative">Muhaha</h1>
+            <div id="my_box" @click="gameMove()" :style="{
+                'margin-top': box.x,
+                'margin-left': box.y,
+                'width': box.width,
+                'height': box.height,
+                'background-color': 'red'
+            }"></div>
         </div>
 
         <!-- Footer -->
