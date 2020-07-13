@@ -96,22 +96,31 @@ $(document).ready(function() {
         }
     );
     
+    if(sidebarposition == true){
+        $('content').width('90%');
+    }
+
     /*
     BoxGame
     */
-    // Box game logic
-    $('.box').map(function() {
-        let rand_x = Math.floor(Math.random() * ($(window).height() - 2 * $('#box').height()));
-        let rand_y = Math.floor(Math.random() * ($(window).width() - 2 * $('#box').width()));
+    // Box game logic   
+    $('#box1').map(function() {
+        let rand_x = Math.floor(Math.random() * ($(window).height() - 2 * $('#' + this.id).height()));
+        let rand_y = Math.floor(Math.random() * ($(window).width() - 2 * $('#' + this.id).width()));
         $('#' + this.id).css({
             'margin-top': rand_x + 'px',
             'margin-left': rand_y + 'px'
         });
     }).get();
 
-    if(sidebarposition == true){
-        $('content').width('90%');
-    }
+    $('#box2').map(function() {
+        let rand_x = Math.floor(Math.random() * ($(window).height() - 2 * $('#' + this.id).height()));
+        let rand_y = Math.floor(Math.random() * ($(window).width() - 2 * $('#' + this.id).width()));
+        $('#' + this.id).css({
+            'margin-top': rand_x + 'px',
+            'margin-left': rand_y + 'px'
+        });
+    }).get();
 });
 
 //ChangesMade == Switched box from id to class/ replaced it throughout the gamestep function, thats all
@@ -174,4 +183,8 @@ function game_step(element) {
             });
         }
     }
+}
+
+function circle_step(element){
+
 }
