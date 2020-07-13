@@ -41,7 +41,7 @@ let init_height = 0;
 
 //Better not to use var as a standard thing
 let sidebarposition = false;
-let moving_box = false;
+let moving_box = false;  //X: Need to make an array of booleans which stores the boxes state of motion
 let ClickTransform = true;
 
 /**
@@ -115,7 +115,9 @@ $(document).ready(function() {
 });
 
 //ChangesMade == Switched box from id to class/ replaced it throughout the gamestep function, thats all
+/* Index: X = Needs upgrade */
 function game_step(element) {
+    //X: Two boxes cannot move at the same timme with this
     if(moving_box) return;
     moving_box = true;
 
