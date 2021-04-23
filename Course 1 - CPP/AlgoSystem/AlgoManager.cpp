@@ -6,6 +6,7 @@
 #include "char_handler.h"
 #include "AlgoManager.h"
 #include "ArrayManager.h"
+//#include "CharManager.h"
 
 using namespace std;
 
@@ -44,11 +45,12 @@ void AlgoManager::startCommandLine(){
         }
 
         ArrayManager arrayManager;
+        //CharManager charmanager;
 
         switch(this->command) {
             //case 0: listCommand(); break;
             case 1: arrayManager.dataStructureCommandLine(); break; // TODO: Your mission bitch
-            //case 2: charCommand(); break;
+            //case 2: charmanager.dataStructureCommandLine(); break;
         }
     }
 }

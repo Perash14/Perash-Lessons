@@ -10,9 +10,9 @@ class CharManager : DataStructureParent
         CharManager();
         virtual ~CharManager();
 
-        void add(char element) override;
+        void CharAdd(char element) override;
         void remove(int index) override;
-        void search(char value) override;
+        void CharSearch(char value) override;
         void sort() override;
         void print() override;
         void help() override;
@@ -25,4 +25,4 @@ class CharManager : DataStructureParent
         bool is_sorted = false;
 };
 
-#endif // CHARMANAGER_H
+#endif // CHARMANAGER_H*/

@@ -34,6 +34,12 @@ inline void swap(int& first, int& second){
     second = temp;
 }
 
+inline void SwapChar(char& first, char& second){
+    char temp = first;
+    first = second;
+    second = temp;
+}
+
 inline char ReceiveAddChar(){
     char element;
     std::cout <<  "Which character would you like to add: ";

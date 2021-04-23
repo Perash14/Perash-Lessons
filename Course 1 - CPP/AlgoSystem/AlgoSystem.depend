@@ -73,7 +73,7 @@
 1591013308 e:\life\coding\gitprojects\perash-lessons\algosystem\globals.h
 	<iostream>
 
-1591187502 source:e:\life\coding\gitprojects\perash-lessons\course 1 - cpp\algosystem\algomanager.cpp
+1616846511 source:e:\life\coding\gitprojects\perash-lessons\course 1 - cpp\algosystem\algomanager.cpp
 	<iostream>
 	"list_handler.h"
 	"char_handler.h"
@@ -89,10 +89,10 @@
 1591187502 e:\life\coding\gitprojects\perash-lessons\course 1 - cpp\algosystem\arraymanager.h
 	"DataStructureParent.h"
 
-1591187502 e:\life\coding\gitprojects\perash-lessons\course 1 - cpp\algosystem\datastructureparent.h
+1616853418 e:\life\coding\gitprojects\perash-lessons\course 1 - cpp\algosystem\datastructureparent.h
 	"globals.h"
 
-1591527995 e:\life\coding\gitprojects\perash-lessons\course 1 - cpp\algosystem\globals.h
+1616846808 e:\life\coding\gitprojects\perash-lessons\course 1 - cpp\algosystem\globals.h
 	<iostream>
 
 1591187502 source:e:\life\coding\gitprojects\perash-lessons\course 1 - cpp\algosystem\algosystem.cpp
@@ -104,7 +104,7 @@
 
 1591187502 e:\life\coding\gitprojects\perash-lessons\course 1 - cpp\algosystem\array_handler.h
 
-1591187502 source:e:\life\coding\gitprojects\perash-lessons\course 1 - cpp\algosystem\arraymanager.cpp
+1591809133 source:e:\life\coding\gitprojects\perash-lessons\course 1 - cpp\algosystem\arraymanager.cpp
 	"ArrayManager.h"
 	<iostream>
 
@@ -113,4 +113,10 @@
 
 1591187503 source:e:\life\coding\gitprojects\perash-lessons\course 1 - cpp\algosystem\list_handler.cpp
 	"list_handler.h"
+
+1616854268 source:e:\life\coding\gitprojects\perash-lessons\course 1 - cpp\algosystem\charmanager.cpp
+	"CharManager.h"
+
+1616853418 e:\life\coding\gitprojects\perash-lessons\course 1 - cpp\algosystem\charmanager.h
+	"DataStructureParent.h"
 

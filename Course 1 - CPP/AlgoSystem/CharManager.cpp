@@ -12,7 +12,7 @@ CharManager::~CharManager()
     //dtor
 }
 
-void ArrayManager::add(char element) {
+void CharManager::CharAdd(char element) {
     char* newArr = new char[this->size + 1];
     for(int i = 0;i < this->size;i++){
         newArr[i] = this->arr[i];
@@ -24,14 +24,14 @@ void ArrayManager::add(char element) {
     this->is_sorted = false;
 }
 
-void ArrayManager::remove(int index) {
+void CharManager::remove(int index) {
     for(int i = index; i < this->size - 1; i++){
         this->arr[i] = this->arr[i + 1];
     }
     this->size--;
 }
 
-void ArrayManager::search(char value) {
+void CharManager::CharSearch(char value) {
     if(!is_sorted){
         for(int i = 0; i < this->size; i++) {
             if(this->arr[i] == value){
@@ -53,7 +53,8 @@ void ArrayManager::search(char value) {
     }
 }
 
-void ArrayManager::sort() {
+// ------------------------------------------------Sorting char array? also error on line 68
+void CharManager::sort() {
     //SelectionSort
     int MinimumIndex, MaximumIndex;
     for(int i = 0;i <= this->size / 2;i++){
@@ -63,20 +64,20 @@ void ArrayManager::sort() {
             if(this->arr[j] <= this->arr[MinimumIndex]) MinimumIndex = j;
             if(this->arr[j] >= this->arr[MaximumIndex]) MaximumIndex = j;
         }
-        swap(this->arr[i], this->arr[MinimumIndex]);
-        swap(this->arr[size - 1 - i], this->arr[MaximumIndex]);
+        SwapChar(this->arr[i], this->arr[MinimumIndex]);
+        SwapChar(this->arr[size - 1 - i], this->arr[MaximumIndex]);
     }
     this->is_sorted = true;
     std::cout << "Array sorted =)" << std::endl;
 }
 
-void ArrayManager::print() {
+void CharManager::print() {
     std::cout << "Your characters are: ";
     for(int i = 0;i < this->size - 1;i++) std::cout << this->arr[i] << ",";
     std::cout << this->arr[this->size - 1] << "." << std::endl;
 }
 
-void ArrayManager::help() {
+void CharManager::help() {
     std::cout << "Which changes do you wish to make:" << std::endl <<
          "\t" << "|0 - Add|" << std::endl <<
          "\t" << "|1 - Remove|" << std::endl <<
@@ -86,7 +87,7 @@ void ArrayManager::help() {
          "\t" << "|5 - Back|" << std::endl;
 }
 
-void ArrayManager::dataStructureCommandLine() {
+void CharManager::dataStructureCommandLine() {
     int command = -1;
     const int END_COMMAND = 5;
 
@@ -116,5 +117,4 @@ void ArrayManager::dataStructureCommandLine() {
         }
     }
 }
-
 
